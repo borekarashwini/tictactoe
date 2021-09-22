@@ -1,0 +1,59 @@
+{
+  "name": "tictactoee",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "fix-parcel": "npx npm-force-resolutions && npm i && npm i",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js",
+    "clear": "rimraf dist .parcel-cache"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-jsx-ally": "^6.0.3",
+    "eslint-plugin-react": "^7.26.0",
+    "parcel": "1.12.4",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        },
+        "yt1"
+      ],
+      [
+        "@babel/plugin-proposal-private-methods",
+        {
+          "loose": true
+        },
+        "yt2"
+      ]
+    ]
+  }
+}
